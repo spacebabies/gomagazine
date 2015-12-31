@@ -11,6 +11,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'foundation-rails'
 
 # gems we need
 gem 'slim-rails'
