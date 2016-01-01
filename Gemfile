@@ -18,6 +18,7 @@ gem "autoprefixer-rails"
 # gems we need
 gem 'slim-rails'
 gem 'factory_girl_rails'
+gem 'paperclip'
 
 group :development do
   gem 'web-console', '~> 2.0'

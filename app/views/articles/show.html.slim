@@ -1,5 +1,9 @@
+.opening style="background-image: url(#{@article.image.upload.url})"
+
 .row
   .small-12.columns
     h1 = @article.head
     p.lead == @article.lead
     == @article.body
+
+- content_for :title, @article.head

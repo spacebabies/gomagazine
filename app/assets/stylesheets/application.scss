@@ -1,5 +1,12 @@
 @import "foundation_and_overrides";
 
+.opening {
+  height: 60vh;
+  margin: {
+    bottom: 4rem;
+  }
+}
+
 .initials {
   float: left;
   margin-right: 1em;
