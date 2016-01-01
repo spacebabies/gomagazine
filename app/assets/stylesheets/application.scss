@@ -1,1 +1,16 @@
 @import "foundation_and_overrides";
+
+.initials {
+  float: left;
+  margin-right: 1em;
+  display: inline-block;
+  border-radius: 50%;
+  color: white;
+  padding: {
+    top: .5rem;
+    left: .7rem;
+  }
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #48de2e;
+}
