@@ -1,3 +1,6 @@
 .row
-  .small-12.columns
+  .small-12.medium-8.columns
     = render partial: @articles, spacer_template: "hr"
+  .small-12.medium-4.columns.sidebar
+    - articletypes.each do |articletype|
+      = link_to articletype.description, [articletype, :articles], class: "tiny button secondary"

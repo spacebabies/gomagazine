@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root to: "welcome#index"
 
-  resources :articles
   resources :authors
+  resources :articletypes do
+    resources :articles, shallow: true
+  end
 end

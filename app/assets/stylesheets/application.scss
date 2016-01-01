@@ -1,5 +1,14 @@
 @import "foundation_and_overrides";
 
+.sidebar {
+  min-height: 100vh;
+  background-color: $vapor;
+
+  .button {
+    text-transform: uppercase;
+  }
+}
+
 .opening {
   height: 60vh;
   margin: {
