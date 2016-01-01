@@ -11,4 +11,12 @@
     p.lead == @article.lead
     == @article.body
 
+footer
+  .row
+    - if @article.previous_article
+      = render partial: "connection", locals: {nav: "Vorige", article: @article.previous_article, articletype: @article.articletype}
+        
+    - if @article.next_article
+      = render partial: "connection", locals: {nav: "Volgende", article: @article.next_article, articletype: @article.articletype}
+
 - content_for :title, @article.head

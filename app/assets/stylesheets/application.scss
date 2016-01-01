@@ -1,6 +1,14 @@
 @import "foundation_and_overrides";
 
+.article-connection {
+  height: 10rem;
+}
+
 .sidebar {
+  padding: {
+    top: 2rem;
+    bottom: 2rem;
+  }
   min-height: 100vh;
   background-color: $vapor;
 
@@ -23,17 +31,36 @@
   }
 }
 
-.initials {
-  float: left;
-  margin-right: 1em;
-  display: inline-block;
-  border-radius: 50%;
-  color: white;
-  padding: {
-    top: .5rem;
-    left: .7rem;
+.article-meta {
+  .subheader {
+    line-height: .5;
   }
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: #48de2e;
+
+  margin: {
+    top: 1rem;
+  }
+}
+
+.head {
+  color: $jet;
+}
+
+article {
+  padding: {
+    top: 1rem;
+    bottom: 2rem;
+  }
+}
+
+footer {
+  padding: {
+    top: 2rem;
+    bottom: 2rem;
+  }
+  background-color: $vapor;
+  min-height: 30vh;
+
+  h5 {
+    text-transform: uppercase;
+  }
 }

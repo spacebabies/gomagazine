@@ -1,7 +1,7 @@
 article
   = render partial: "articles/meta", locals: {article: article}
 
-  h1 = article.head
+  h1 = link_to(article.head, article, class: "head")
   
   h5.subheader = article.chapeau
 

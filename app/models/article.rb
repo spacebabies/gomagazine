@@ -6,4 +6,12 @@ class Article < ActiveRecord::Base
   has_many :images, as: :visual
 
   to_param :head
+
+  def previous_article
+    articletype.articles.order(:created_at).where.not(id: id).where("created_at < ?", created_at).last
+  end
+
+  def next_article
+    articletype.articles.order(:created_at).where.not(id: id).where("created_at > ?", created_at).first
+  end
 end

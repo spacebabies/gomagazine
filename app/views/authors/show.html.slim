@@ -1,4 +1,7 @@
 .row
   .small-12.columns
     h1 = @author.name
-    h4 = t("article", count: @author.articles_count)
+    - if @first_article && @last_article
+      p Schreef #{@author.articles_count} artikelen van #{l @first_article.created_at, format: :long} tot en met #{l @last_article.created_at, format: :long}.
+    - else
+      p Schreef #{@author.articles_count} artikelen.

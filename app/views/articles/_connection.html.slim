@@ -1,0 +1,8 @@
+.small-12.medium-6.columns
+  .article-connection
+    h5
+      small #{nav} in #{articletype.description}
+    h3 = link_to(article.head, article, class: "head")
+    p = article.chapeau
+    = render partial: "articles/meta", locals: {article: article}
+  = link_to "Lees meer", article, class: "tiny button secondary right"
