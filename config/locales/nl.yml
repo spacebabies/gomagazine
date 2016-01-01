@@ -1,0 +1,5 @@
+nl:
+  article:
+    one: 1 artikel
+    other: "%{count} artikelen"
+  more: Lees meer

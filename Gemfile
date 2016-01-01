@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # rails
 gem 'rails', '4.2.5'
+gem 'rails-i18n'
 
 # database
 gem 'mysql2'
