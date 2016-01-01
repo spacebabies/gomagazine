@@ -12,6 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'foundation-rails'
+gem "autoprefixer-rails"
 
 # gems we need
 gem 'slim-rails'
