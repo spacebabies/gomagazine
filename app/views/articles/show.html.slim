@@ -1,4 +1,9 @@
-.opening style="background-image: url(#{@article.image.upload.url})"
+.row.meta
+  .small-12.columns
+    = render partial: "articles/meta", locals: {article: @article}
+
+- if @article.image.present?
+  section.opening style="background-image: url(#{@article.image.upload.url})"
 
 .row
   .small-12.columns
