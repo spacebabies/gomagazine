@@ -12,5 +12,9 @@ html lang="nl"
     = csrf_meta_tag
 
   body
-
+    header
+      .row
+        .small-12.columns
+          = link_to root_path do
+            = image_tag "logo_grey.png", alt: "GO Magazine"
     == yield
